@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="#" className="text-xl font-bold glow-text">
-          &lt;Dev /&gt;
+          Harsh.
         </a>
 
         {/* Desktop */}

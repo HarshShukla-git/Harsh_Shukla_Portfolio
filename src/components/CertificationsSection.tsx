@@ -3,11 +3,9 @@ import { useRef } from "react";
 import { Award, ShieldCheck } from "lucide-react";
 
 const certs = [
-  { title: "OCI AI Foundations 2025", issuer: "Oracle", icon: ShieldCheck },
-  { title: "Oracle Cloud Infrastructure Certified", issuer: "Oracle", icon: Award },
-  { title: "Selenium WebDriver Certification", issuer: "Test Automation University", icon: Award },
-  { title: "UiPath RPA Developer", issuer: "UiPath Academy", icon: ShieldCheck },
-  { title: "Python for Data Science", issuer: "Coursera", icon: Award },
+  { title: "Microsoft Certified: Azure Administrator (AZ-104)", issuer: "Microsoft", icon: ShieldCheck },
+  { title: "OCI AI Foundations Associate", issuer: "Oracle", icon: Award },
+  { title: "Oracle Cloud Infrastructure Foundations Associate", issuer: "Oracle", icon: Award },
 ];
 
 const CertificationsSection = () => {
