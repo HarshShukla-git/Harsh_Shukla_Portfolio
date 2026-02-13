@@ -83,8 +83,8 @@ const ContactSection = () => {
             className="flex flex-col justify-center gap-5"
           >
             {[
-              { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/harsh-shukla", desc: "Connect professionally" },
-              { icon: Github, label: "GitHub", href: "https://github.com/harsh-shukla", desc: "View my code" },
+              { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/harsh-shukla-06262220b/", desc: "Connect professionally" },
+              { icon: Github, label: "GitHub", href: "https://github.com/HarshShukla-git", desc: "View my code" },
               { icon: Mail, label: "Email", href: "mailto:harsh2917.hs@gmail.com", desc: "harsh2917.hs@gmail.com" },
             ].map((link) => (
               <a
