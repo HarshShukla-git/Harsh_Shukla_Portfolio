@@ -4,25 +4,32 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Software Automation Engineer",
-    company: "Tech Solutions Pvt. Ltd.",
-    period: "Jan 2023 – Present",
+    role: "Associate – SDET / QA Automation Engineer",
+    company: "Cognizant Technology Solutions",
+    period: "Dec 2022 – Present",
     achievements: [
-      "Built and maintained 200+ automated test cases reducing regression time by 60%",
-      "Integrated AI-driven test generation saving 40 hours/month",
-      "Led RPA initiative automating 5 business processes end-to-end",
-      "Mentored 3 junior QA engineers on automation best practices",
+      "Built and maintained scalable automation frameworks using Selenium, TestNG, and UFT; reduced regression cycle time by 30%",
+      "Designed and executed REST API automation suites using Postman and RestAssured (functional, negative, boundary cases)",
+      "Performed complex SQL-based backend validations ensuring data integrity for healthcare and enterprise systems",
+      "Owned end-to-end UiPath RPA testing (attended & unattended), validating workflows, queues, retry logic, and exception handling",
+      "Acted as single QA owner for automation, API, and RPA testing across 10+ applications; led client calls and defect triage",
+      "Integrated automation execution with CI/CD pipelines and practiced shift-left testing across 20+ enterprise releases",
     ],
   },
   {
-    role: "QA Automation Intern → Associate Engineer",
-    company: "Innovation Labs",
-    period: "Aug 2021 – Dec 2022",
+    role: "Full Stack Developer Intern",
+    company: "Bytexus Software Solutions Pvt. Ltd.",
+    period: "Jul 2022 – Nov 2022",
     achievements: [
-      "Developed Selenium hybrid framework from scratch using POM",
-      "Automated API testing pipeline with RestAssured + TestNG",
-      "Reduced manual testing effort by 45% across 3 product lines",
-      "Contributed to CI/CD pipeline setup with Jenkins integration",
+      "Developed and tested full-stack applications using React.js, Node.js, MySQL, and REST APIs",
+    ],
+  },
+  {
+    role: "Intern – Quality Engineering",
+    company: "Cognizant Technology Solutions",
+    period: "Jan 2022 – Jun 2022",
+    achievements: [
+      "Executed healthcare QA including automation support, database validation, and UiPath bot testing",
     ],
   },
 ];
