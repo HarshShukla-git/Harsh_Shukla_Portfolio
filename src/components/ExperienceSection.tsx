@@ -8,12 +8,13 @@ const experiences = [
     company: "Cognizant Technology Solutions",
     period: "Dec 2022 – Present",
     achievements: [
-      "Built and maintained scalable automation frameworks using Selenium, TestNG, and UFT; reduced regression cycle time by 30%",
-      "Designed and executed REST API automation suites using Postman and RestAssured (functional, negative, boundary cases)",
+      "Built and maintained scalable automation frameworks using Selenium, Cypress, and Playwright; reduced regression cycle time by 30%",
+      "Designed REST API automation suites using RestAssured & Postman — functional, negative, boundary, and contract testing",
       "Performed complex SQL-based backend validations ensuring data integrity for healthcare and enterprise systems",
       "Owned end-to-end UiPath RPA testing (attended & unattended), validating workflows, queues, retry logic, and exception handling",
       "Acted as single QA owner for automation, API, and RPA testing across 10+ applications; led client calls and defect triage",
-      "Integrated automation execution with CI/CD pipelines and practiced shift-left testing across 20+ enterprise releases",
+      "Integrated automation with CI/CD pipelines (Jenkins, Azure DevOps) and practiced shift-left testing across 20+ releases",
+      "Explored AI-driven testing — integrating OpenAI API for test case generation and self-healing locator strategies",
     ],
   },
   {
@@ -22,6 +23,8 @@ const experiences = [
     period: "Jul 2022 – Nov 2022",
     achievements: [
       "Developed and tested full-stack applications using React.js, Node.js, MySQL, and REST APIs",
+      "Implemented unit testing with Jest and integration testing for API endpoints",
+      "Gained hands-on experience with Git workflows, code reviews, and agile sprint ceremonies",
     ],
   },
   {
@@ -30,6 +33,8 @@ const experiences = [
     period: "Jan 2022 – Jun 2022",
     achievements: [
       "Executed healthcare QA including automation support, database validation, and UiPath bot testing",
+      "Assisted in building automation test scripts using Selenium WebDriver and TestNG",
+      "Participated in defect lifecycle management using JIRA and ALM",
     ],
   },
 ];
