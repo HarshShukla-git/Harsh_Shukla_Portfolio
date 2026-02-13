@@ -4,27 +4,57 @@ import { ExternalLink, Github, Brain, Bot, TestTubes, Bug } from "lucide-react";
 
 const projects = [
   {
-    icon: TestTubes,
-    title: "Enterprise Automation & RPA Test Framework",
-    problem: "Need for reusable, scalable test scenarios integrating UI, API, database validation with CI/CD readiness.",
-    techStack: ["Selenium", "TestNG", "UiPath", "CI/CD"],
+    icon: Brain,
+    title: "AI-Powered Test Case Generator",
+    problem: "Manual test case creation is time-consuming and often misses edge cases in complex business logic.",
+    techStack: ["OpenAI API", "Python", "React", "FastAPI"],
     highlights: [
-      "Built reusable automation & RPA test scenarios",
-      "Integrated UI, API, and database validation",
-      "CI/CD-ready logging and reporting",
+      "Integrated GPT models to auto-generate functional & edge-case test scenarios from user stories",
+      "Reduced test design effort by 60% across sprint cycles",
+      "Built prompt engineering pipeline for domain-specific test generation",
+      "Dashboard for reviewing, editing, and exporting test cases to JIRA",
+    ],
+    github: "https://github.com/HarshShukla-git",
+    demo: "#",
+  },
+  {
+    icon: TestTubes,
+    title: "Enterprise Hybrid Automation Framework",
+    problem: "Fragmented automation across UI, API, and database layers causing slow regression cycles.",
+    techStack: ["Selenium", "TestNG", "RestAssured", "Jenkins", "Docker"],
+    highlights: [
+      "Built POM + Data-Driven hybrid framework with reusable component library",
+      "Integrated UI (Selenium), API (RestAssured), and DB (SQL) validations in single pipeline",
+      "Reduced regression cycle time by 30% with parallel execution on Docker grid",
+      "CI/CD-triggered execution with Allure reporting and Slack notifications",
     ],
     github: "https://github.com/HarshShukla-git",
     demo: "#",
   },
   {
     icon: Bot,
-    title: "API Automation & Integration Testing Framework",
-    problem: "Manual API testing is slow and error-prone for complex enterprise integrations.",
-    techStack: ["RestAssured", "Java", "SQL", "CI/CD"],
+    title: "RPA Invoice Processing & Testing Bot",
+    problem: "Manual invoice processing across legacy systems causing delays and high error rates.",
+    techStack: ["UiPath Studio", "Orchestrator", "SQL", "Azure"],
     highlights: [
-      "Data-driven REST API validation",
-      "SQL backend checks for data integrity",
-      "CI/CD-triggered automated execution",
+      "Automated end-to-end invoice extraction, validation, and ERP entry using UiPath",
+      "Tested attended & unattended bots with queue management and retry logic",
+      "Reduced processing time by 70% and manual errors by 90%",
+      "Integrated exception handling with automated email escalations",
+    ],
+    github: "https://github.com/HarshShukla-git",
+    demo: "#",
+  },
+  {
+    icon: Bug,
+    title: "ML-Based Bug Prediction Model",
+    problem: "Reactive bug detection in late SDLC phases increases cost-of-fix exponentially.",
+    techStack: ["Python", "scikit-learn", "Pandas", "Flask", "Git"],
+    highlights: [
+      "Trained ML model on historical defect data to predict high-risk modules before testing",
+      "Achieved 82% accuracy using Random Forest on code churn & complexity features",
+      "Integrated with CI pipeline to flag risky commits pre-merge",
+      "Reduced critical production defects by 35% in pilot project",
     ],
     github: "https://github.com/HarshShukla-git",
     demo: "#",
@@ -48,7 +78,7 @@ const ProjectsSection = () => {
             Featured <span className="glow-text">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Real-world solutions where automation meets intelligence.
+            Real-world solutions where automation meets AI and intelligent engineering.
           </p>
         </motion.div>
 
@@ -58,7 +88,7 @@ const ProjectsSection = () => {
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.12 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
               className="glass-card-hover p-6 sm:p-8 flex flex-col"
             >
               <div className="flex items-center gap-3 mb-4">
@@ -88,25 +118,14 @@ const ProjectsSection = () => {
                 ))}
               </div>
 
-              {/* Architecture placeholder */}
-              <div className="rounded-lg bg-muted/50 border border-border p-4 mb-6 text-center">
-                <p className="text-xs text-muted-foreground font-mono">
-                  📐 Architecture Diagram
-                </p>
-              </div>
-
               <div className="flex gap-3">
                 <a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-outline-glow !py-2 !px-4 text-sm flex items-center gap-2"
                 >
                   <Github size={16} /> GitHub
-                </a>
-                <a
-                  href={project.demo}
-                  className="btn-primary-glow !py-2 !px-4 text-sm flex items-center gap-2"
-                >
-                  <ExternalLink size={16} /> Live Demo
                 </a>
               </div>
             </motion.div>

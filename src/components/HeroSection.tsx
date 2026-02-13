@@ -56,10 +56,10 @@ const HeroSection = () => {
         >
           <span className="text-foreground">Harsh Shukla</span>
           <br />
-          <span className="glow-text text-2xl sm:text-3xl lg:text-4xl">Automation Engineer | AI-Driven Problem Solver</span>
+          <span className="glow-text text-2xl sm:text-3xl lg:text-4xl">SDET · AI-Driven Quality Engineer · Cloud-Native QA</span>
           <br />
-          <span className="text-muted-foreground text-xl sm:text-2xl lg:text-3xl font-medium">
-            Building Scalable Test Systems
+          <span className="text-muted-foreground text-lg sm:text-xl lg:text-2xl font-medium">
+            Selenium · Cypress · Playwright · UiPath · Azure · AI/ML Testing
           </span>
         </motion.h1>
 
@@ -69,8 +69,8 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          3.3+ years crafting intelligent automation frameworks. Merging AI with
-          test engineering to build systems that think, adapt, and scale.
+          3.3+ years engineering intelligent automation frameworks across healthcare & enterprise platforms. 
+          Merging AI, cloud, and DevOps to build test systems that think, adapt, and scale.
         </motion.p>
 
         <motion.div
@@ -95,11 +95,12 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto"
+          className="mt-16 grid grid-cols-4 gap-6 max-w-xl mx-auto"
         >
           {[
             { value: "3.3+", label: "Years Exp." },
-            { value: "15+", label: "Projects" },
+            { value: "20+", label: "Releases" },
+            { value: "10+", label: "Applications" },
             { value: "5+", label: "Certifications" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

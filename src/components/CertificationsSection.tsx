@@ -1,11 +1,13 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Award, ShieldCheck } from "lucide-react";
+import { Award, ShieldCheck, Cloud, Brain } from "lucide-react";
 
 const certs = [
-  { title: "Microsoft Certified: Azure Administrator (AZ-104)", issuer: "Microsoft", icon: ShieldCheck },
-  { title: "OCI AI Foundations Associate", issuer: "Oracle", icon: Award },
-  { title: "Oracle Cloud Infrastructure Foundations Associate", issuer: "Oracle", icon: Award },
+  { title: "Microsoft Certified: Azure Administrator Associate (AZ-104)", issuer: "Microsoft", icon: ShieldCheck },
+  { title: "OCI AI Foundations Associate", issuer: "Oracle", icon: Brain },
+  { title: "Oracle Cloud Infrastructure Foundations Associate", issuer: "Oracle", icon: Cloud },
+  { title: "ISTQB Certified Tester – Foundation Level", issuer: "ISTQB", icon: Award },
+  { title: "Certified SAFe® Practitioner", issuer: "Scaled Agile", icon: Award },
 ];
 
 const CertificationsSection = () => {
@@ -24,6 +26,9 @@ const CertificationsSection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="glow-text">Certifications</span>
           </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto">
+            Industry-recognized credentials validating cloud, testing, and agile expertise.
+          </p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
