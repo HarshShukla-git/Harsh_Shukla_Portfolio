@@ -83,13 +83,15 @@ const ContactSection = () => {
             className="flex flex-col justify-center gap-5"
           >
             {[
-              { icon: Linkedin, label: "LinkedIn", href: "#", desc: "Connect professionally" },
-              { icon: Github, label: "GitHub", href: "#", desc: "View my code" },
-              { icon: Mail, label: "Email", href: "mailto:your@email.com", desc: "your@email.com" },
+              { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/harsh-shukla", desc: "Connect professionally" },
+              { icon: Github, label: "GitHub", href: "https://github.com/harsh-shukla", desc: "View my code" },
+              { icon: Mail, label: "Email", href: "mailto:harsh2917.hs@gmail.com", desc: "harsh2917.hs@gmail.com" },
             ].map((link) => (
               <a
                 key={link.label}
                 href={link.href}
+                target={link.label !== "Email" ? "_blank" : undefined}
+                rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
                 className="glass-card-hover p-5 flex items-center gap-4 group"
               >
                 <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
