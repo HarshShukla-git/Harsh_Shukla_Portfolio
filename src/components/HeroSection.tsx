@@ -5,7 +5,7 @@ import profilePhoto from "@/assets/photo.jpeg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pb-16">
       {/* Background */}
       <div className="absolute inset-0">
         <img
@@ -82,7 +82,7 @@ const HeroSection = () => {
           <a href="#projects" className="btn-primary-glow flex items-center gap-2">
             View Projects <ArrowRight size={18} />
           </a>
-          <a href="#" className="btn-outline-glow flex items-center gap-2">
+          <a href="https://drive.google.com/placeholder-resume-link" target="_blank" rel="noopener noreferrer" className="btn-outline-glow flex items-center gap-2">
             <Download size={18} /> Download Resume
           </a>
           <a href="#contact" className="btn-outline-glow flex items-center gap-2">
