@@ -82,7 +82,7 @@ const HeroSection = () => {
           <a href="#projects" className="btn-primary-glow flex items-center gap-2">
             View Projects <ArrowRight size={18} />
           </a>
-          <a href="https://drive.google.com/placeholder-resume-link" target="_blank" rel="noopener noreferrer" className="btn-outline-glow flex items-center gap-2">
+          <a href="/Harsh_Shukla_Resume.pdf" download className="btn-outline-glow flex items-center gap-2">
             <Download size={18} /> Download Resume
           </a>
           <a href="#contact" className="btn-outline-glow flex items-center gap-2">

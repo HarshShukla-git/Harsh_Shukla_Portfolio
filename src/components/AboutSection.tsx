@@ -11,8 +11,9 @@ const highlights = [
 ];
 
 const techBadges = [
-  "Selenium", "UiPath", "Java", "Python", "OpenAI API", "TestNG",
-  "REST APIs", "Git", "CI/CD", "RPA", "Prompt Engineering", "SQL",
+  "Selenium", "UiPath", "Java", "JavaScript", "SQL", "VBScript",
+  "RestAssured", "Postman", "SoapUI", "TestNG", "JUnit", "UFT",
+  "Azure DevOps", "CI/CD", "JIRA", "ALM",
 ];
 
 const AboutSection = () => {
