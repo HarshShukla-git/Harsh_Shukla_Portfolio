@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import profilePhoto from "@/assets/photo.jpeg";
 
 const HeroSection = () => {
   return (
@@ -20,6 +21,22 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-accent/10 rounded-full blur-[100px] animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        {/* Profile Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="mb-6"
+        >
+          <div className="w-32 h-32 sm:w-36 sm:h-36 mx-auto rounded-full border-2 border-primary/40 p-1 shadow-[0_0_30px_hsl(var(--primary)/0.25)]">
+            <img
+              src={profilePhoto}
+              alt="Harsh Shukla"
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,11 +54,11 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6"
         >
-          <span className="text-foreground">Automation Engineer</span>
+          <span className="text-foreground">Harsh Shukla</span>
           <br />
-          <span className="glow-text">AI-Driven Problem Solver</span>
+          <span className="glow-text text-2xl sm:text-3xl lg:text-4xl">Automation Engineer | AI-Driven Problem Solver</span>
           <br />
-          <span className="text-muted-foreground text-2xl sm:text-3xl lg:text-4xl font-medium">
+          <span className="text-muted-foreground text-xl sm:text-2xl lg:text-3xl font-medium">
             Building Scalable Test Systems
           </span>
         </motion.h1>
